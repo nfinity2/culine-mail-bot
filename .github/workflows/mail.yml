@@ -29,9 +29,10 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
-
+    
       - name: Check emails
         env:
+          IMAP_HOST: mail.veebimajutus.ee
           MAIL_USER: ${{ secrets.MAIL_USER }}
           MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
