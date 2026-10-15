@@ -4,7 +4,7 @@
 1. Loo GitHubis **uus public repository** (ära lisa paroole ega `.env` faili). Avaliku repo tavapärased GitHub-hosted Actionsi minutid on tasuta. Kontrolli GitHubi kehtivaid kasutustingimusi.
 2. Laadi repo juurkausta `mail_to_discord.py`, `requirements.txt`, `.gitignore`, `.env.example` ja `README.md`. Loo ka `.github/workflows/mail.yml` täpselt samas asukohas. Võid kasutada GitHubi `Add file > Upload files` (peidetud `.github` kataloogi jaoks võib mugavam olla Git või VS Code).
 3. Repo **Settings → Secrets and variables → Actions → New repository secret**. Lisa:
-   - `MAIL_USER`: sinu päris postkasti aadress (nt info@culine.ee)
+   - `MAIL_USER`: sinu päris postkasti aadress
    - `MAIL_PASSWORD`: postkasti parool
    - `DISCORD_WEBHOOK_URL`: UUS privaatse Discordi kanali webhook URL
 4. Repo **Settings → Actions → General → Workflow permissions**: vali **Read and write permissions** ja salvesta. Kui valik on lukus, peab organisatsiooni admin seda lubama.
